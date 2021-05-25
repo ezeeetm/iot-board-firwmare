@@ -1,0 +1,27 @@
+{
+	"network": {
+		"enable_wifi": true,
+		"wlans": [{
+				"friendly_name": "",
+				"essid": "",
+				"passwd": ""
+			}
+		],
+		"timeout_seconds": 10,
+		"enable_ap": false,
+		"ap_essid": "iotanium-kiosk-sensor",
+		"ap_pw": "iotanium",
+		"enable_webrepl": true,
+		"webrepl_pw": ""
+	},
+	"mqtt": {
+		"thing_id": "IoTaniumKiosk_Input",
+		"endpoint": "ec2-34-214-106-36.us-west-2.compute.amazonaws.com",
+		"topic": "iotanium/kiosk/message",
+		"publish_rate": 1
+	},
+	"logging": {
+		"level": 10,
+		"topic": "iotanium/kiosk/IoTaniumKiosk_Input/logs"
+	}
+}
